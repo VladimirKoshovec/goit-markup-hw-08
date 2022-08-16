@@ -1,0 +1,15 @@
+.section{
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+   
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        color: $blacknav;
+        letter-spacing: 0.03em;
+        margin: 0px 0px 50px 0px;
+    }
+}

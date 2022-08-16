@@ -1,0 +1,55 @@
+.principles {
+    padding-bottom: 47px;
+
+    &__list{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    &__item{
+        max-width: 270px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__icon{
+        fill: $blacknav;
+    }
+
+    &__thumb{
+        display: flex;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        background-color: #F5F4FA;
+    
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title{
+        color: $blacknav;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    
+        margin: 0px 0px 10px 0px;
+        padding: 0px;
+    }
+
+    &__deskrp{
+        font-size: 14px;
+    
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+    
+        margin: 0px;
+        padding: 0px;
+    }
+}

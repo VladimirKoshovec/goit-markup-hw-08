@@ -1,0 +1,146 @@
+.portfolio{
+
+    &__title{
+   
+        width: 1px; 
+        height: 1px; 
+        margin: -1px; 
+        border: 0; 
+        padding: 0; 
+        white-space: nowrap; 
+        clip-path: inset(100%); 
+        clip: rect(0 0 0 0); 
+        overflow: hidden;   
+    } 
+
+    &__list{
+        margin: 0px;
+        padding: 0px;
+    
+        display: flex;
+        flex-wrap: wrap;
+       
+        margin-left: calc(-1 * $portfolio-gap);
+        margin-top: calc(-1 * $portfolio-gap);
+    }
+}
+.companycard{
+        flex-basis: calc(100% / 3 - $portfolio-gap);
+        margin-left: $portfolio-gap;
+        margin-top: $portfolio-gap;
+     
+        transition: box-shadow $transitoin-property;
+
+        &:hover, &:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+        &__border{
+
+            border: 1px solid #EEEEEE;
+            padding-top: 20px;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-bottom: 20px;
+        }
+
+        &__title{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            color: #212121;
+            letter-spacing: 0.06em;
+            
+            padding: 0px;
+            margin:0px;
+           
+            margin-bottom: 4px; 
+        }
+        
+        &__deskr{
+            font-size: 16px;
+            line-height: 1.875;
+            letter-spacing: 0.03em;
+        
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+    &__thumb{
+        display: block;
+        position: relative;
+        overflow: hidden;
+
+        &-text{
+   
+            display: block;
+            position:absolute;
+        
+            margin: 0px;
+            padding: 0px;
+        
+            color: $brandwhite;
+            font-size: 18px;
+            line-height: 1.56;
+            padding: 63px 23px;
+            
+            width: 100%;
+            height: 100%;
+            background-color: rgba(33, 150, 243, 0.9);
+        
+            overflow: auto; 
+            transition: transform $transitoin-property;
+        }
+        
+        &:hover &-text{
+            transform: translateY(-100%);
+        }
+    } 
+
+    &__img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.filter{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 50px;
+        justify-content: center;
+
+        &__item:not(:last-child){
+            margin-right: 8px;
+        }
+
+        &__button {
+            cursor: pointer;
+            font-family: Roboto, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.625;
+            text-align: center;
+            color: $blacknav;
+            background: $dbgcolorgray;
+            letter-spacing: 0.03em;
+        
+            display: block;
+            border-radius: 4px;
+            padding: 6px 22px 6px 22px;
+            border: none;
+        
+            transition: color $transitoin-property,
+            background $transitoin-property;
+
+            &:hover,
+            &:focus {
+                color: $brandwhite;
+                background: $brandblue;
+            }        
+        }
+}    

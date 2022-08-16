@@ -1,0 +1,60 @@
+.pagehader{  
+    
+    border-bottom: 1px solid #ECECEC;
+    padding-top:24px;
+    padding-bottom: 25px;
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav{
+            display: flex;
+            align-items: center;
+    }
+    
+    &__adress{
+        margin: 0px;
+        padding: 0px;
+
+        display: flex;
+        margin-left: auto;
+    }
+} 
+
+.adress{
+    font-weight: 500;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $brandgray;
+        font-size: 14px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        transition: color $transitoin-property;
+
+        &:hover, &:focus{
+                color: $brandblue;  
+        }
+    }
+
+    &__email{
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    
+    &__phone{
+        fill: currentColor;
+        margin-right: 10px;
+    }   
+}

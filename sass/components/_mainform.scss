@@ -1,0 +1,185 @@
+.mainform{
+    position: absolute;
+    background: $brandwhite;
+    z-index: 99;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    padding: 40px;
+
+    &__caption{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $blacknav;
+        margin: 0;
+     
+        margin-bottom: 12px;
+     }
+
+    &__inputarea{
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    
+    }
+
+    &__input{
+        width: 100%;
+        height: 40px;
+        padding: 11px;
+        padding-left: 42px;
+        margin-bottom: 10px;
+     
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+     
+        transition: border-color $transitoin-property;
+
+        &cover{
+            position: relative;
+        }
+
+        &icon{
+            transition: fill $transitoin-property;
+            position: absolute;
+            top:11px;
+            left:12px;
+
+            transition: fill $transitoin-property;
+        }
+
+        &:focus,
+        &:focus + &icon{
+        fill: $brandblue;
+        border-color: $brandblue;
+        outline: none;
+}
+
+     }
+
+    &__label{
+        display: block;
+        margin-bottom: 4px;
+    
+        font-size: 12px;
+        line-height: 1.67;
+        letter-spacing: 0.01em;
+    }
+    
+    &__comment{
+        height: 120px;
+        resize: none;
+        width: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        padding: 12px 16px;
+        margin-bottom: 20px;
+
+        transition: border-color $transitoin-property;
+
+        &:focus{
+            border-color: $brandblue;
+            outline: none;
+        }
+
+        &::placeholder{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+    
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
+
+    &__button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 50px;
+    
+        background-color: $brandblue;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border-style: none;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+    
+        color: $brandwhite;
+      
+        transition: background-color $transitoin-property;
+
+        &:focus, 
+        &:hover{
+        background-color: $button-focus;
+        }
+    }
+
+
+.checkbox{
+        margin-bottom: 30px;
+
+        &__label{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            color: #757575;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__input{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            position: absolute;
+
+            &:checked + .checkbox__icon{
+                background-image: url(../images/icon-checked.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+                background-color: $brandblue;
+                border-color: $brandblue;
+            }
+        }
+        &__icon{
+                display: block;
+                margin-right: 7px;
+            
+                border: 2px solid $blacknav;
+                width: 16px;
+                height: 15px;
+                border-radius: 2px;
+                cursor: pointer;
+            
+                transition: background-color $transitoin-property,
+                border-color $transitoin-property;
+        }
+    
+   
+        &__link {
+                color: $brandblue;
+        }
+        
+    }
+
+}
