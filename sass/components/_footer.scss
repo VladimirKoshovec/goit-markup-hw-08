@@ -1,19 +1,19 @@
 .footer{
-
-    @media screen and (min-width: $desktop){
     background-color: $dbgcolorblack;
     padding-top: 60px;
     padding-bottom: 60px;
-
-    &__columns{
-        display: flex;
-        justify-content: space-evenly;
-    }
 
     &__logo{
         color: $brandwhite;
         display: block;
         margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop){
+
+    &__columns{
+        display: flex;
+        justify-content: space-evenly;
     }
 
     &__socillinks{

@@ -2,16 +2,17 @@
 
     &__list{
         
-        // display: flex;
-        // flex-wrap: wrap;
-        // gap: 30px;
-
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
     }
 
     &__nav{
 
         display: flex;
-        width: calc((100% - 2*30px)/2); 
+        width: 210px;
+        // width: calc((100% - 2*30px)/2); 
         height: 92px;
         border-radius: 4px;
         color: $iconfill;
@@ -33,12 +34,16 @@
         fill: currentColor; 
     }
    
+
    @media screen and (min-width: $desktop){
     
    &__list{
+
        display: flex;
        justify-content: center;
        align-items: center;
+       flex-wrap: nowrap;
+       gap: 0px;
 
        margin: 0px;
        padding: 0px;
@@ -51,8 +56,6 @@
     &__nav{
 
         display: flex;
-        flex-wrap: nowrap;
-    
         width: 170px;
         height: 92px;
     }
