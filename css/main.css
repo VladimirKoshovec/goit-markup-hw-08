@@ -437,52 +437,49 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .sociallinks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0px;
-    padding: 0px;
-  }
-  .sociallinks__item:not(:last-child) {
-    margin-right: 10px;
-  }
-  .sociallinks__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: inherit;
-    color: #AFB1B8;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .sociallinks__link:hover, .sociallinks__link:focus {
-    background-color: #2196F3;
-    color: #FFFFFF;
-  }
-  .sociallinks__icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-  }
+.sociallinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
-
+.sociallinks__item:not(:last-child) {
+  margin-right: 10px;
+}
+.sociallinks__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: inherit;
+  color: #AFB1B8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sociallinks__link:hover, .sociallinks__link:focus {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+.sociallinks__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 .hero {
   display: block;
   margin-left: auto;
@@ -736,6 +733,31 @@ body {
   }
 }
 
+.clients__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc((100% - 60px) / 2);
+  height: 92px;
+  border-radius: 4px;
+  color: #AFB1B8;
+  border: 1px solid #AFB1B8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__nav:hover, .clients__nav:focus {
+  color: #2196F3;
+  border-color: #2196F3;
+}
+.clients__icon {
+  fill: currentColor;
+}
 @media screen and (min-width: 1200px) {
   .clients__list {
     display: -webkit-box;
@@ -757,26 +779,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     width: 170px;
     height: 92px;
-    border-radius: 4px;
-    color: #AFB1B8;
-    border: 1px solid #AFB1B8;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .clients__nav:hover, .clients__nav:focus {
-    color: #2196F3;
-    border-color: #2196F3;
-  }
-  .clients__icon {
-    fill: currentColor;
   }
 }
 

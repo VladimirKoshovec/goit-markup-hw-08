@@ -1,24 +1,17 @@
 .clients{
-   
-   
-   @media screen and (min-width: $desktop){
-    
-   &__list{
-       display: flex;
-       justify-content: center;
-       align-items: center;
 
-       margin: 0px;
-       padding: 0px;
-    }
+    &__list{
+        
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 30px;
 
-    &__card:not(:last-child){
-       margin-right: 30px;
     }
 
     &__nav{
+
         display: flex;
-        width: 170px;
+        width: calc((100% - 2*30px)/2); 
         height: 92px;
         border-radius: 4px;
         color: $iconfill;
@@ -39,6 +32,31 @@
     &__icon{
         fill: currentColor; 
     }
+   
+   @media screen and (min-width: $desktop){
+    
+   &__list{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+       margin: 0px;
+       padding: 0px;
+    }
+
+    &__card:not(:last-child){
+       margin-right: 30px;
+    }
+
+    &__nav{
+
+        display: flex;
+        flex-wrap: nowrap;
+    
+        width: 170px;
+        height: 92px;
+    }
+    
 
     }
 }
