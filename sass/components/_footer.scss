@@ -1,4 +1,6 @@
 .footer{
+
+    @media screen and (min-width: $desktop){
     background-color: $dbgcolorblack;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -92,9 +94,12 @@
         padding-bottom: 20px;
     }
 }
+}
 
 // form in footer
 .form{
+
+    @media screen and (min-width: $desktop){
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -120,8 +125,11 @@
         }
     }
 }
+}
 
 .button{
+
+    @media screen and (min-width: $desktop){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,4 +165,5 @@
     &:hover{
         background-color:$button-focus;
     }
+}
 }

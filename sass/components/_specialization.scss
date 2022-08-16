@@ -1,4 +1,10 @@
 .specialization{
+
+    display: none;
+
+    @media screen and (min-width: $desktop){
+    display: block;
+
     padding-top: 47px;
 
     &__img{
@@ -41,4 +47,5 @@
     &__item:not(:last-child) {
         margin-right: 30px;
     }
+}
 }

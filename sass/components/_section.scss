@@ -1,15 +1,29 @@
 .section{
+    
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__title{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        color: $blacknav;
+        letter-spacing: 0.03em;
+        margin: 0px 0px 30px 0px;
+    }
+
+
+    @media screen and (min-width: $desktop){
+
     display: block;
     padding-top: 94px;
     padding-bottom: 94px;
    
     &__title{
-        font-weight: 700;
         font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        color: $blacknav;
-        letter-spacing: 0.03em;
         margin: 0px 0px 50px 0px;
     }
+   }
 }

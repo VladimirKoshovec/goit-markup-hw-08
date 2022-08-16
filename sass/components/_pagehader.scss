@@ -1,6 +1,10 @@
 .pagehader{  
-    
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
+
+    @media screen and (min-width: $desktop){
+    
     padding-top:24px;
     padding-bottom: 25px;
 
@@ -21,9 +25,16 @@
         display: flex;
         margin-left: auto;
     }
+   }
 } 
 
 .adress{
+
+    display: none;
+
+    @media screen and (min-width: $desktop){
+
+    display: flex;    
     font-weight: 500;
 
     &__item:not(:last-child) {
@@ -57,5 +68,5 @@
         fill: currentColor;
         margin-right: 10px;
     }   
-
+   }
 }

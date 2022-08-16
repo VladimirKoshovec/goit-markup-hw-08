@@ -1,8 +1,12 @@
 .menu{
-    font-weight: 500;
-    display: flex;
+
+    display: none;
     margin: 0px;
     padding: 0px;
+
+    @media screen and (min-width: $desktop){
+    font-weight: 500;
+    display: flex;
     margin-left: 93px;
 
     &__item:not(:last-child){
@@ -37,6 +41,7 @@
             color: $brandblue;  
         }
 
+    }
     }
 
 }
