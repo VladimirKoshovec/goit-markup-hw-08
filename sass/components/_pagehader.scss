@@ -1,23 +1,31 @@
 .pagehader{  
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #ECECEC;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     @media screen and (min-width: $desktop){
     
     padding-top:24px;
     padding-bottom: 25px;
 
-    &__box {
-        display: flex;
-        align-items: center;
-    }
 
     &__nav{
             display: flex;
             align-items: center;
     }
     
+    &__box {
+        display: flex;
+        align-items:center;
+    }
+
     &__adress{
         margin: 0px;
         padding: 0px;

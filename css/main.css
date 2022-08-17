@@ -319,16 +319,27 @@ body {
 }
 
 .pagehader {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ECECEC;
+}
+.pagehader__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .pagehader {
     padding-top: 24px;
     padding-bottom: 25px;
   }
-  .pagehader__box {
+  .pagehader__nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -336,7 +347,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .pagehader__nav {
+  .pagehader__box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -401,6 +412,28 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.menu__button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+.menu__button:hover, .menu__button:focus {
+  fill: #2196F3;
+}
+.menu__button .icon-cross {
+  display: none;
+}
+.menu__button.is-open .icon-cross {
+  display: block;
+}
+.menu__button.is-open .icon-menu {
+  display: none;
+}
 @media screen and (min-width: 1200px) {
   .menu {
     font-weight: 500;
@@ -408,6 +441,9 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin-left: 93px;
+  }
+  .menu__button {
+    display: none;
   }
   .menu__item:not(:last-child) {
     margin-right: 50px;
