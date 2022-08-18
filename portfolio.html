@@ -30,6 +30,18 @@
                     <li class="menu__item active-page"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
                     <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
                 </ul>
+                <!-- mobile__button -->
+                <!-- <button type="button" class="mobile__button" data-menu-button>
+                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="icon-menu" href="images/icons.svg#icon-menu"></use>
+                        <use class="icon-cross" href="images/icons.svg#icon-menu-close"></use>
+                   </svg>
+                </button>  -->
+                <button type="button" class="mobile__button"menu-mobile-open>
+                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="icon-menu" href="images/icons.svg#icon-menu"></use>
+                   </svg>
+                </button>
             </nav>
             <!--adress-->
             <ul class="adress pagehader__adress listnone">
@@ -44,6 +56,36 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+        </div>
+
+        <!-- mobile-menu -->
+        <div class="mobile__form" menu-mobile>
+
+          <button type="button" class="mobile__button" menu-mobile-close>
+                <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                    <use class="icon-cross" href="images/icons.svg#icon-menu-close"></use>
+                </svg>
+          </button> 
+
+          <ul class="mobile__menu listnone">
+            <li class="mobile__item mobile__item--active"><a href="" class="mobile__link">Студия</a></li>
+            <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфолио</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
+          </ul>
+          
+          <div class="mobile__nav-box">
+          <ul class="mobile__adress listnone">
+            <li class="mobile__item"><a href="tel:+380961111111" class="mobile__link--blue">+38 096 111 11 11</a></li>
+            <li class="mobile__item"><a href="mailto:info@devstudio.com" class="mobile__link--gray">info@devstudio.com</a></li>
+          </ul>
+
+          <ul class="mobile__socials listnone">
+           <li class="socials__item"><a href="#" class="socials__link">Instagram</a></li>
+           <li class="socials__item"><a href="#" class="socials__link">Twitter</a></li>
+           <li class="socials__item"><a href="#" class="socials__link">Facebook</a></li>
+           <li class="socials__item"><a href="#" class="socials__link">LinkedIn</a></li>
+          </ul>
+          </div>
         </div>
     </header>
 
@@ -61,7 +103,7 @@
             <ul class="portfolio__list listnone">
                 <li class="companycard">
                   <div class="companycard__thumb">
-                    <img src="./images/img-portfolio/img1.jpg" alt="Технокряк" width="370" height="294" class="companycard__img">
+                    <img src="./images/img-portfolio/img1.jpg" alt="Технокряк" class="companycard__img">
                     <p class="companycard__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                   </div>
                     <div class="companycard__border">
@@ -71,8 +113,7 @@
                 </li>
                 <li class="companycard">
                     <div class="companycard__thumb">
-                    <img src="./images/img-portfolio/img2.jpg" alt="Постер New Orlean vs Golden Star" width="370"
-                        height="294" class="companycard__img">
+                    <img src="./images/img-portfolio/img2.jpg" alt="Постер New Orlean vs Golden Star" class="companycard__img">
                     <p class="companycard__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>    
                     <div class="companycard__border">  
@@ -82,7 +123,7 @@
                 </li>
                 <li class="companycard">
                     <div class="companycard__thumb">
-                    <img src="./images/img-portfolio/img3.jpg" alt="Ресторан Seafood" width="370" height="294" class="companycard__img">
+                    <img src="./images/img-portfolio/img3.jpg" alt="Ресторан Seafood"class="companycard__img">
                     <p class="companycard__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     <div class="companycard__border">
@@ -92,7 +133,7 @@
                 </li>
                 <li class="companycard">
                     <div class="companycard__thumb">
-                    <img src="./images/img-portfolio/img4.jpg" alt="Проект Prime" width="370" height="294" class="companycard__img">
+                    <img src="./images/img-portfolio/img4.jpg" alt="Проект Prime"class="companycard__img">
                     <p class="companycard__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p> 
                    </div>
                     <div class="companycard__border">
@@ -102,7 +143,7 @@
                 </li>
                 <li class="companycard">
                     <div class="companycard__thumb">
-                    <img src="./images/img-portfolio/img5.jpg" alt="Проект Boxes" width="370" height="294" class="companycard__img">
+                    <img src="./images/img-portfolio/img5.jpg" alt="Проект Boxes"class="companycard__img">
                     <p class="companycard__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     <div class="companycard__border">
@@ -112,8 +153,7 @@
                 </li>
                 <li class="companycard">
                     <div class="companycard__thumb">
-                    <img src="./images/img-portfolio/img6.jpg" alt="Inspiration has no Borders" width="370"
-                        height="294" class="companycard__img">
+                    <img src="./images/img-portfolio/img6.jpg" alt="Inspiration has no Borders" class="companycard__img">
                     <p class="companycard__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     <div class="companycard__border">
@@ -123,7 +163,7 @@
                 </li>
                 <li class="companycard">
                     <div class="companycard__thumb">
-                    <img src="./images/img-portfolio/img7.jpg" alt="Издание Limited Edition" width="370" height="294" class="companycard__img">
+                    <img src="./images/img-portfolio/img7.jpg" alt="Издание Limited Edition" class="companycard__img">
                     <p class="companycard__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     <div class="companycard__border">
@@ -133,7 +173,7 @@
                 </li>
                 <li class="companycard">
                     <div class="companycard__thumb">
-                    <img src="./images/img-portfolio/img8.jpg" alt="Проект LAB" width="370" height="294" class="companycard__img">
+                    <img src="./images/img-portfolio/img8.jpg" alt="Проект LAB" class="companycard__img">
                     <p class="companycard__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     <div class="companycard__border">
@@ -143,7 +183,7 @@
                 </li>
                 <li class="companycard">
                     <div class="companycard__thumb">
-                    <img src="./images/img-portfolio/img9.jpg" alt="Growing Business" width="370" height="294" class="companycard__img">
+                    <img src="./images/img-portfolio/img9.jpg" alt="Growing Business" class="companycard__img">
                     <p class="companycard__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     <div class="companycard__border">
@@ -212,6 +252,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

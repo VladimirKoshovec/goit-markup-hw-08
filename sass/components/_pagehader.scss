@@ -2,10 +2,10 @@
 
     padding-top: 10px;
     padding-bottom: 10px;
-    // height: 60px;
     border-bottom: 1px solid #ECECEC;
 
     &__nav {
+
         height: 40px;
         position: relative;
         display: flex;
@@ -21,8 +21,9 @@
 
 
     &__nav{
-            display: flex;
-            align-items: center;
+        display: flex;
+        align-items: center;
+        height: unset;
     }
     
     &__box {
