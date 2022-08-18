@@ -1,9 +1,13 @@
 .pagehader{  
+
     padding-top: 10px;
     padding-bottom: 10px;
+    // height: 60px;
     border-bottom: 1px solid #ECECEC;
 
     &__nav {
+        height: 40px;
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
