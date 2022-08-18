@@ -923,7 +923,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 210px;
   height: 92px;
   border-radius: 4px;
   color: #AFB1B8;
@@ -940,6 +939,10 @@ body {
 .clients__nav:hover, .clients__nav:focus {
   color: #2196F3;
   border-color: #2196F3;
+}
+.clients__card {
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 .clients__icon {
   fill: currentColor;

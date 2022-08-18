@@ -9,10 +9,8 @@
     }
 
     &__nav{
-
+        
         display: flex;
-        width: 210px;
-        // width: calc((100% - 2*30px)/2); 
         height: 92px;
         border-radius: 4px;
         color: $iconfill;
@@ -28,6 +26,10 @@
             color: $brandblue;
             border-color: $brandblue;
         }
+    }
+
+    &__card{
+        flex-basis: calc((100% - 2*15px)/2); 
     }
     
     &__icon{
