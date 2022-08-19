@@ -12,6 +12,32 @@
         align-items: center;
     }
 
+    &__button{
+ 
+    
+    padding: 0;
+    margin: 0;
+
+    width: 40px;
+    height: 40px;
+    border:none;
+    background-color: inherit;
+    cursor: pointer;
+
+    &:hover, &:focus{
+        fill: $brandblue;
+    }
+
+
+    @media screen and (min-width: $tablet){
+        display: none;
+      }
+
+    @media screen and (min-width: $desktop){
+      display: none;
+    }
+    }
+
     @media screen and (min-width: $tablet){
     
         padding-top: 21px;
