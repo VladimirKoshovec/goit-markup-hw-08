@@ -103,7 +103,12 @@
             <ul class="portfolio__list listnone">
                 <li class="companycard">
                   <div class="companycard__thumb">
-                    <img src="./images/img-portfolio/img1.jpg" alt="Технокряк" class="companycard__img">
+                    <img 
+                    src="./images/img-portfolio/img1.jpg" 
+                    srcset="./images/img-portfolio/img1.jpg 370w, ./images/img-portfolio/img1@2x.jpg 740w" 
+                    alt="Технокряк" 
+                    sizes="(min-width: 1200px) calc(33vw-30px), (min-width: 768px) calc(100vw-30px), 100vw"
+                    class="companycard__img">
                     <p class="companycard__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                   </div>
                     <div class="companycard__border">

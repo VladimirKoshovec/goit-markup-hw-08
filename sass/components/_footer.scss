@@ -1,4 +1,5 @@
 .footer{
+    
     background-color: $dbgcolorblack;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -84,6 +85,28 @@
         padding-bottom: 20px;
     }
 
+    @media screen and (min-width: $tablet) and (max-width: $desktop){
+
+    position: relative;    
+
+
+    &__nav{
+        position: absolute;
+        left: 76px;
+    }
+
+    &__socillinks{
+        position: absolute;
+        right: 89px;
+    }
+
+    &__form{
+        display: block;
+        padding-top: 247px;
+    }
+
+}
+
     @media screen and (min-width: $desktop){
 
     text-align: unset;    
@@ -145,6 +168,13 @@
         }
     }
 
+    @media screen and (min-width: $tablet) and (max-width: $desktop){
+
+       &__mail{
+          width: 450px;
+       }   
+    }
+
     @media screen and (min-width: $desktop){
 
     display: flex;  
@@ -198,7 +228,4 @@
     
     }
 
-    @media screen and (min-width: $desktop){
-          
-    }
 }

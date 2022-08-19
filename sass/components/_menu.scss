@@ -4,6 +4,49 @@
     margin: 0px;
     padding: 0px;
 
+    @media screen and (min-width: $tablet){
+
+    font-weight: 500;
+    display: flex;
+    margin-left: 88px;
+
+
+    &__item:not(:last-child){
+        margin-right: 50px;
+    }
+
+
+    &__link{
+        text-decoration: none;
+        color: $blacknav;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        position: relative;
+        display: flex;
+        align-items: center;
+    
+        transition: color $transitoin-property;
+
+        .active-page > &::after{
+            position: absolute;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $brandblue;
+            bottom: -34px;
+        
+        }
+
+        &:hover, &:focus{
+            color: $brandblue;  
+        }
+
+    }
+    }
+
     @media screen and (min-width: $desktop){
     font-weight: 500;
     display: flex;

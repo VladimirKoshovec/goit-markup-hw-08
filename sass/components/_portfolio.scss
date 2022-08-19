@@ -20,6 +20,11 @@
         margin-left: calc(-1 * $portfolio-gap);
         margin-top: calc(-1 * $portfolio-gap);
 
+        @media screen and (min-width: $tablet){
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         @media screen and (min-width: $desktop){
             display: flex;
             flex-wrap: wrap;
@@ -29,20 +34,30 @@
 
 .companycard{
 
-        flex-basis: calc(100% / 3 - $portfolio-gap);
+        flex-basis: calc(100% - $portfolio-gap);
         margin-left: $portfolio-gap;
         margin-top: $portfolio-gap;
-     
+        
         transition: box-shadow $transitoin-property;
 
         &:hover, &:focus{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06), 
         1px 4px 6px rgba(0, 0, 0, 0.16);
+        
+        }
+
+        @media screen and (min-width:$tablet){
+            max-width: $tablet;
+            flex-basis: calc(100% / 2 - $portfolio-gap);              
+        }
+
+        @media screen and (min-width:$desktop){
+            max-width: $desktop;
+            flex-basis: calc(100% / 3 - $portfolio-gap);
         }
 
         &__border{
-
             border: 1px solid #EEEEEE;
             padding-top: 20px;
             padding-left: 24px;
@@ -56,7 +71,7 @@
             line-height: 2;
             color: #212121;
             letter-spacing: 0.06em;
-            
+
             padding: 0px;
             margin:0px;
            
@@ -81,7 +96,7 @@
         &-text{
    
             display: block;
-            position:absolute;
+            position: absolute;
         
             margin: 0px;
             padding: 0px;
@@ -107,12 +122,17 @@
     &__img{
  
         display: block;
-        width: 100%;
+        max-width: 100%;
         height: auto;
+
+        @media screen and (min-width: $tablet){
+            max-width: 100%;
+            width: 354px; 
+            height: 294px;
+        }
 
         @media screen and (min-width: $desktop){
             max-width: 100%;
-            
             width: 370px; 
             height: 294px;
         }
@@ -159,6 +179,16 @@
         }        
     }
         
+    @media screen and (min-width: $tablet){
+        
+        margin-bottom: 30px;
+        justify-content: center;
+
+        &__button {
+            margin-bottom: 0;
+        }
+    }
+
     @media screen and (min-width: $desktop){
         
         margin-bottom: 50px;

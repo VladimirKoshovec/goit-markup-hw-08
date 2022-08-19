@@ -10,6 +10,11 @@
     margin: 0 auto;
   }
 
+  @media screen and (min-width: $tablet){
+    width: $tablet;
+    margin: 0 auto;
+  }
+
   @media screen and (min-width: $desktop){
     width: 1200px;
     margin: 0 auto;

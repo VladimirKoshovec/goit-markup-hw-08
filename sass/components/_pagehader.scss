@@ -5,7 +5,6 @@
     border-bottom: 1px solid #ECECEC;
 
     &__nav {
-
         height: 40px;
         position: relative;
         display: flex;
@@ -13,6 +12,31 @@
         align-items: center;
     }
 
+    @media screen and (min-width: $tablet){
+    
+        padding-top: 21px;
+        padding-bottom: 21px;
+    
+    
+        &__nav{
+            display: flex;
+            align-items: center;
+            height: unset;
+        }
+        
+        &__box {
+            display: flex;
+            align-items:center;
+        }
+    
+        &__adress{
+            margin: 0px;
+            padding: 0px;
+    
+            display: flex;
+            margin-left: auto;
+        }
+       }
 
     @media screen and (min-width: $desktop){
     
@@ -45,6 +69,46 @@
 
     display: none;
 
+    @media screen and (min-width: $tablet){
+
+        display: block;
+
+        &__item:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        
+        &__link{
+            text-decoration: none;
+            color: $brandgray;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+
+            font-family: 'Roboto';
+            
+            position: relative;
+            display: flex;
+            align-items: center;
+            
+            transition: color $transitoin-property;
+    
+            &:hover, &:focus{
+                    color: $brandblue;  
+            }
+        }
+    
+        &__email{
+            fill: currentColor;
+            margin-right: 10px;
+        }
+        
+        &__phone{
+            fill: currentColor;
+            margin-right: 10px;
+        }   
+    
+    }
+
     @media screen and (min-width: $desktop){
 
     display: flex;    
@@ -52,6 +116,7 @@
 
     &__item:not(:last-child) {
         margin-right: 30px;
+        margin-bottom: 0;
     }
 
     &__link{
