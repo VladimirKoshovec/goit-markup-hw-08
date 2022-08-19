@@ -1403,7 +1403,8 @@ body {
   padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .footer {
+  .footer__columns {
+    max-width: 768px;
     position: relative;
   }
   .footer__nav {

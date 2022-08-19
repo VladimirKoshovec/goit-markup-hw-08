@@ -85,10 +85,12 @@
         padding-bottom: 20px;
     }
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop){
+    @media screen and (min-width: $tablet) and (max-width: $desktop){       
 
-    position: relative;    
-
+    &__columns{
+        max-width: 768px;
+        position: relative;
+    }
 
     &__nav{
         position: absolute;
