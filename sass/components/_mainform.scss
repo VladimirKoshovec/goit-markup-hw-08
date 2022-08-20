@@ -13,6 +13,10 @@
 
     padding: 40px;
 
+    @media screen and (min-width:$tablet) and (max-width:$desktop){
+        width: 450px;
+    }
+
     @media screen and (min-width:$desktop){
         width: unset;
     }
