@@ -84,7 +84,7 @@
                     <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
                     <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
                 </ul>
-                <button type="button" class="pagehader__button"menu-mobile-open>
+                <button type="button" class="pagehader__button" menu-mobile-open>
                     <svg width="40" height="40" aria-label="переключатель мобильного меню">
                         <use class="icon-menu" href="images/icons.svg#icon-menu"></use>
                    </svg>
@@ -223,26 +223,41 @@
                 <ul class="specialization__list listnone">
                     <li class="specialization__item">
                         <a href="" class="specialization__link">
-                        <div class="specialization__thumb"><img src="images/img_portfolio1_f.jpg"
+                        <div class="specialization__thumb">
+                            <picture>
+                            <source srcset="images/img_portfolio1_f.webp 1x, images/img_portfolio1_f@2x.webp 2x" type="image/webp" /> 
+                            <source srcset="images/img_portfolio1_f.jpg 1x, images/img_portfolio1_f@2x.jpg 2x"type="image/jpeg" />   
+                            <img src="images/img_portfolio1_f.jpg"
                                 alt="Программирование" width="370" height="294" 
                                 class="specialization__img">
+                            </picture>
                                 <div class="specialization__thumb-overlay">Десктопні додатки</div>
                         </div>
                         </a>
                     </li>
                     <li class="specialization__item">
                         <a href="" class="specialization__link">
-                        <div class="specialization__thumb"><img src="images/img_portfolio2_f.jpg"
+                        <div class="specialization__thumb">
+                            <picture>
+                            <source srcset="images/img_portfolio2_f.webp 1x, images/img_portfolio2_f@2x.webp 2x" type="image/webp" /> 
+                            <source srcset="images/img_portfolio2_f.jpg 12, images/img_portfolio2_f@2x.jpg 2x"type="image/jpeg" /> 
+                            <img src="images/img_portfolio2_f.jpg"
                                 alt="Разработка мобильных приложений" width="370" height="294"
                                 class="specialization__img">
+                            </picture>
                                 <div class="specialization__thumb-overlay">Мобільні додатки</div>
                         </div>
                         </a>
                     </li>
                     <li class="specialization__item">
                         <a href="" class="specialization__link">
-                        <div class="specialization__thumb"><img src="images/img_portfolio3_f.jpg" alt="Дизайн" width="370" height="294"
+                        <div class="specialization__thumb">
+                            <picture>
+                            <source srcset="images/img_portfolio3_f.webp 1x, images/img_portfolio3_f@2x.webp 2x" type="image/webp" /> 
+                            <source srcset="images/img_portfolio3_f.jpg 12, images/img_portfolio3_f@2x.jpg 2x"type="image/jpeg" />     
+                            <img src="images/img_portfolio3_f.jpg" alt="Дизайн" width="370" height="294"
                                 class="specialization__img">
+                            </picture>
                                 <div class="specialization__thumb-overlay">Дизайнерські рішення</div>
                         </div>
                         </a>
