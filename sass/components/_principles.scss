@@ -51,6 +51,7 @@
     }
 
     @media screen and (min-width: $tablet) and (max-width:$desktop){
+
         margin-right: auto;
         margin-left: auto;
 
@@ -79,6 +80,8 @@
 
     &__list{
         display: flex;
+        flex-wrap: nowrap;
+        gap: unset;
         margin: 0px;
         padding: 0px;
     }

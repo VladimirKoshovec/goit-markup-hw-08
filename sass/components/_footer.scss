@@ -104,7 +104,7 @@
 
     &__form{
         display: block;
-        padding-top: 247px;
+        padding-top: 187px;
     }
 
 }
@@ -114,16 +114,19 @@
     text-align: unset;    
 
     &__columns{
+        position: unset;
         display: flex;
         justify-content: space-evenly;
     }
 
     &__nav{
+        position: unset;
         display: block;
         margin-bottom: 0;
     }
 
     &__socillinks{
+        position: unset;
         margin-bottom: 0;
         margin-top: 12px;
         margin-left: 70px;
@@ -139,7 +142,9 @@
         display:block;
         margin-bottom: 9px;
     }
+
     &__form{
+        padding-top: 0;
         margin-top: 12px;
         margin-left: 93px;
     }
@@ -171,7 +176,6 @@
     }
 
     @media screen and (min-width: $tablet) and (max-width: $desktop){
-
        &__mail{
           width: 450px;
        }   

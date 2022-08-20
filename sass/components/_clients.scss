@@ -36,7 +36,13 @@
         fill: currentColor; 
     }
    
-
+   @media screen and (min-width: $tablet) and (max-width:$desktop){
+    
+   &__card{
+        flex-basis: calc((100% - 3*20px)/3); 
+   }
+   }
+   
    @media screen and (min-width: $desktop){
     
    &__list{

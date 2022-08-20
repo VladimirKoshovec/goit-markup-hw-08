@@ -14,20 +14,23 @@
     } 
 
     &__list{
+
         margin: 0px;
         padding: 0px;
        
         margin-left: calc(-1 * $portfolio-gap);
-        margin-top: calc(-1 * $portfolio-gap);
+        // margin-top: calc(-1 * $portfolio-gap);
 
         @media screen and (min-width: $tablet){
             display: flex;
             flex-wrap: wrap;
+            margin-top: calc(-1 * $portfolio-gap)
         }
 
         @media screen and (min-width: $desktop){
             display: flex;
             flex-wrap: wrap;
+            margin-top: calc(-1 * $portfolio-gap)
         }
     }
 }
@@ -38,6 +41,9 @@
         margin-left: $portfolio-gap;
         margin-top: $portfolio-gap;
         
+        display: flex;
+        flex-direction: column;
+
         transition: box-shadow $transitoin-property;
 
         &:hover, &:focus{
@@ -47,7 +53,7 @@
         
         }
 
-        @media screen and (min-width:$tablet){
+        @media screen and (min-width:$tablet) and (max-width:$desktop){
             max-width: $tablet;
             flex-basis: calc(100% / 2 - $portfolio-gap);              
         }
@@ -58,6 +64,8 @@
         }
 
         &__border{
+
+            flex-grow: 1;
             border: 1px solid #EEEEEE;
             padding-top: 20px;
             padding-left: 24px;
@@ -89,6 +97,7 @@
 
 
     &__thumb{
+
         display: block;
         position: relative;
         overflow: hidden;
@@ -140,6 +149,7 @@
 }
 
 .filter{
+
     display: flex;
     flex-wrap: wrap;
     margin: 0px;
