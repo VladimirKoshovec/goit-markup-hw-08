@@ -1049,6 +1049,28 @@ body {
   margin: 0px;
   padding: 0px;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .principles {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .principles__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  .principles__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+  .principles__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .principles {
     display: block;
