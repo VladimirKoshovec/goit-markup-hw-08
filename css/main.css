@@ -151,7 +151,7 @@ body {
   border-radius: 4px;
   padding: 40px;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 1200px) {
   .mainform {
     width: 450px;
   }
@@ -1210,6 +1210,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 30px;
+  margin: 0px;
 }
 .clients__nav {
   display: -webkit-box;
@@ -1259,7 +1260,6 @@ body {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     gap: 0px;
-    margin: 0px;
     padding: 0px;
   }
   .clients__card:not(:last-child) {
